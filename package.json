@@ -7,10 +7,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build --prod",
+    "build": "ng build --prod --aot",
     "test": "ng test",
-    "lint": "ng lint",
-    "heroku-postbuild": "ng build --prod --aot"
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {

@@ -1,7 +1,9 @@
 {
-  "name": "my-app",
-  "version": "0.0.0",
+  "name": "in-your-hertz",
+  "version": "0.5.0",
+  "author": "Gianluca Di Francesco",
   "license": "MIT",
+  "description": "A simple and minimal audio frequency generator.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
@@ -36,5 +38,9 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gianlucadifrancesco/in-your-hertz.git"
   }
 }

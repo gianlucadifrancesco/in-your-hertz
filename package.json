@@ -1,6 +1,6 @@
 {
   "name": "in-your-hertz",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "author": "Gianluca Di Francesco",
   "license": "MIT",
   "description": "A simple and minimal audio frequency generator.",

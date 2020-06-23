@@ -6,7 +6,7 @@
   "description": "A simple and minimal audio frequency generator.",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o --port $PORT",
+    "start": "ng serve -o",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",

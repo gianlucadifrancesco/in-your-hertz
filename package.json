@@ -10,13 +10,15 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "heroku-postbuild": "ng build --prod --aot"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.0",
+    "@angular/cli": "~1.7.1",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
     "@angular/core": "^5.2.0",
     "@angular/forms": "^5.2.0",
     "@angular/http": "^5.2.0",
@@ -29,8 +31,6 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular/cli": "~1.7.1",
-    "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",

@@ -1,0 +1,8 @@
+h1 {
+    margin-bottom: .1em;
+}
+
+img.logo {
+    width: 100%;
+    max-width: 256px;
+}

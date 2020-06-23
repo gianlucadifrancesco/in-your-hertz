@@ -1,0 +1,38 @@
+<!-- <h1 *ngIf="!this.isSupported()" style="color:darkred;">Your browser doesn't support this player!</h1> -->
+<div #player class="player">
+  <h2>Insert a value in Hertz you want to play.</h2>
+  <div class="slidecontainer">
+    <input #hzSlider id="hzSlider" type="range" class="slider" min="1" max="20000" value="{{silderValue}}" (input)="switchHzFromSlider(hzSlider.value)">
+  </div>
+  <input #hzText id="hzText" class="slideText" type="text" maxlength="5" value="{{hz}}" (input)="switchHzFromText(hzText.value)" (blur)="hzText.value = hz" /><span>&nbsp;Hz</span><br />
+  <div class="actions">
+    <div class="action volume">
+      <div>
+        <input #volumeSlider id="volume" type="range" class="slider" min="0" max="100" value="{{volume}}" (input)="switchVolume(volumeSlider.value)" />
+      </div>
+      <div>
+        <span>Volume&nbsp;</span><input #volumeText id="volumeText" class="slideText" type="text" maxlength="3" value="{{volume}}" (input)="switchVolume(volumeText.value)" (blur)="volumeText.value = volume" />
+      </div>
+    </div>
+    <div class="action">
+      <input #playButton type="button" (click)="playing ? stop() : play()" value="{{playing ? 'Stop' : 'Play'}}" />
+    </div>
+    <div class="action type">
+      <div [ngClass]="{ 'selected' : type == 'sine' }" (click)="switchType('sine')">
+        <img src="assets/images/sine-128x128.png" />
+      </div>
+      <div [ngClass]="{ 'selected' : type == 'square' }" (click)="switchType('square')">
+        <img src="assets/images/square-128x128.png" />
+      </div>
+      <div [ngClass]="{ 'selected' : type == 'triangle' }" (click)="switchType('triangle')">
+        <img src="assets/images/triangle-128x128.png" />
+      </div>
+      <div [ngClass]="{ 'selected' : type == 'sawtooth' }" (click)="switchType('sawtooth')">
+        <img src="assets/images/sawtooth-128x128.png" />
+      </div>
+    </div>
+  </div>
+  <div class="notify">
+    <span *ngIf="playing" class="fa fa-play"><strong>&nbsp;Playing</strong></span>
+  </div>
+</div>

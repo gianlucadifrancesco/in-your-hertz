@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Helvetica, sans-serif;
+    color: #444;
+}
+
+.main {
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 300%;
+}
+h2 {
+    font-size: 200%;
+}
+
+p, span {
+    font-size: 150%;
+}

@@ -8,7 +8,7 @@ You can also switch the volume and change the wave type, with one click only.
 
 ## Try it
 
-[https://inyourhertz.netlify.app/](https://inyourhertz.netlify.app/)
+[https://inyourhertz.netlify.app](https://inyourhertz.netlify.app)
 
 ## What I used
 

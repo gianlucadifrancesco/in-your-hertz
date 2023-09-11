@@ -10,7 +10,7 @@ You can also switch the volume and change the wave type, with one click only.
 
 [https://inyourhertz.netlify.app](https://inyourhertz.netlify.app)
 
-## What I used
+## Tools used
 
 - Angular 5
 - AudioContext
